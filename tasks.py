@@ -24,12 +24,14 @@ def test_version_bump(c, new_version, update_type="patch"):
         f"pipenv run bumpversion --verbose --dry-run --new-version {new_version} {update_type}")
 
 
-@task(test, help={"new_version": "New version to use", "update_type": "Either patch, minor, or major."})
-def deploy(c, new_version, update_type="patch"):
+@task(test, help={"new_version": "New version to use", "update_type": "Either patch, minor, or major.", "bump_version": "Whether or not to bump version."})
+def deploy(c, new_version, update_type="patch", bump_version=True):
     '''
     Deploy a new version
     '''
-    c.run(f"pipenv run bumpversion --new-version {new_version} {update_type}")
+    if bump_version:
+        c.run(
+            f"pipenv run bumpversion --new-version {new_version} {update_type}")
     c.run("git push")
     c.run("pipenv run python setup.py sdist bdist_wheel")
     c.run("pipenv run twine check dist/*")
