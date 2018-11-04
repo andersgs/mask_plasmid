@@ -32,7 +32,7 @@ def deploy(c, new_version, update_type="patch", bump_version=True):
     if bump_version:
         c.run(
             f"pipenv run bumpversion --new-version {new_version} {update_type}")
-    c.run("git push")
+    c.run("git push --tags")
     c.run("pipenv run python setup.py sdist bdist_wheel")
     c.run("pipenv run twine check dist/*")
     c.run("pipenv run twine upload dist/*")
