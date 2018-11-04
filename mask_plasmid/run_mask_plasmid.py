@@ -7,6 +7,8 @@ import pathlib
 import click
 from Bio import SeqIO
 
+from mask_plasmid import __version__ as VERSION
+
 
 def parse_record(record):
     '''
@@ -17,7 +19,18 @@ def parse_record(record):
     print(f"{rec_id}\t1\t{rec_length}")
 
 
+def print_version(ctx, param, value):
+    '''
+    Print version
+    '''
+    if not value or ctx.resilient_parsing:
+        return
+    click.echo(f"mask_plasmid {VERSION}")
+    ctx.exit()
+
+
 @click.command()
+@click.option('--version', is_flag=True, callback=print_version, expose_value=False, is_eager=True)
 @click.option("--format", default="genbank", help="Input file format", show_default=True)
 @click.argument("filename")
 def run_mask(format, filename):
