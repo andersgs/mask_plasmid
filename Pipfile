@@ -10,6 +10,9 @@ click = "*"
 [dev-packages]
 pbr = "*"
 pytest = "*"
+bumpversion = "*"
+invoke = "*"
+twine = "*"
 
 [requires]
 python_version = "3.7"
