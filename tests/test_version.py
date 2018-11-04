@@ -14,4 +14,4 @@ def test_version_string():
     runner = CliRunner()
     result = runner.invoke(run_mask_plasmid.run_mask, ["--version"])
     assert result.exit_code == 0
-    assert result.output == f"mask_plasmid {VERSION}\n"
+    assert result.output == f"mask-plasmid {VERSION}\n"
