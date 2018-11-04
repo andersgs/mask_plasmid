@@ -25,7 +25,7 @@ def print_version(ctx, param, value):
     '''
     if not value or ctx.resilient_parsing:
         return
-    click.echo(f"mask_plasmid {VERSION}")
+    click.echo(f"mask-plasmid {VERSION}")
     ctx.exit()
 
 
