@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+* bugfix typo
+* Added control of version number to PBR
+* Removed ofending classifiers
+* Updated README deployment statment
+
+0.1.2
+-----
+
+* Version 0.1.2
 * Some more docs
 * Removed clean up commit, better let the dev do this before deploying
 * Added pipenv-to-requirements to dev
