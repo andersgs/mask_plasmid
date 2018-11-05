@@ -1,12 +1,10 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "08895267fdc6949c56b61e87a1854ef66dd48d775e004bc37fb2cf4ac38f392c"
+            "sha256": "6a7a35c47241ed83462cefcfe42d2b0513f4451132b5ddd4b0bf1cac3705105c"
         },
         "pipfile-spec": 6,
-        "requires": {
-            "python_version": "3.7"
-        },
+        "requires": {},
         "sources": [
             {
                 "name": "pypi",
@@ -171,6 +169,22 @@
             "index": "pypi",
             "version": "==5.1.0"
         },
+        "pipenv": {
+            "hashes": [
+                "sha256:a785235bf2ddf65ea8a91531b3372471d9ad86036335dba8bd63f20c00a68e63",
+                "sha256:aca036e5fe988c8c2850167976b9361cfa8519afffe95bb1010105547622f9ee",
+                "sha256:d5ac9a7705c654ec6ed0059df4f0470d88119591d2724828cb5268207547afc1"
+            ],
+            "version": "==2018.10.13"
+        },
+        "pipenv-to-requirements": {
+            "hashes": [
+                "sha256:c20f905dfe4d93bc41486a36b87cf479f2d6b30b006649b57af68a0ab6bd48a8",
+                "sha256:d3d633c213d2fae0d2dceec26c9c67fdbeb48b56eeee66c9b2153c20cd0ba306"
+            ],
+            "index": "pypi",
+            "version": "==0.6.1"
+        },
         "pkginfo": {
             "hashes": [
                 "sha256:5878d542a4b3f237e359926384f1dde4e099c9f5525d236b1840cf704fa8d474",
@@ -256,6 +270,19 @@
                 "sha256:de9529817c93f27c8ccbfead6985011db27bd0ddfcdb2d86f3f663385c6a9c22"
             ],
             "version": "==1.24.1"
+        },
+        "virtualenv": {
+            "hashes": [
+                "sha256:686176c23a538ecc56d27ed9d5217abd34644823d6391cbeb232f42bf722baad",
+                "sha256:f899fafcd92e1150f40c8215328be38ff24b519cd95357fa6e78e006c7638208"
+            ],
+            "version": "==16.1.0"
+        },
+        "virtualenv-clone": {
+            "hashes": [
+                "sha256:afce268508aa5596c90dda234abe345deebc401a57d287bcbd76baa140a1aa58"
+            ],
+            "version": "==0.4.0"
         },
         "webencodings": {
             "hashes": [
