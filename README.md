@@ -68,5 +68,6 @@ The following command will:
 - push to pypi
 
 ```
+git commit -a -m <message>
 pipenv run inv deploy <new_version_number> [<patch|minor|major>]
 ```
