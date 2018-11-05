@@ -15,4 +15,5 @@ invoke>=1.2.0
 pbr>=5.1.0
 pipenv-to-requirements>=0.6.1
 pytest>=3.10.0
+readme-renderer
 twine>=1.12.1
