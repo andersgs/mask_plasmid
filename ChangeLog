@@ -1,0 +1,24 @@
+CHANGES
+=======
+
+0.1.0
+-----
+
+* Added minimal docstring
+* Added dist and \*.pyc
+* Second go at 3.7 support
+* First commit
+* Fixed to allow 3.7
+* Add min travisCI
+* Added python\_requires 3.6 or above
+* Removed python 3.7 requirement
+* Add --tags to git push command
+* Made version bump optional
+* Added some deploy tasks
+* Fixed typo in version string test
+* Added bumpversion invoke and twine
+* Added license string
+* Updated entry point to be mask-plasmid
+* Added version string
+* First commit
+* Initial commit
