@@ -1,0 +1,18 @@
+################################################################################
+# This requirements file has been automatically generated from `Pipfile` with
+# `pipenv-to-requirements`
+#
+#
+# This has been done to maintain backward compatibility with tools and services
+# that do not support `Pipfile` yet.
+#
+# Do NOT edit it directly, use `pipenv install [-d]` to modify `Pipfile` and
+# `Pipfile.lock` and then regenerate `requirements*.txt`.
+################################################################################
+
+bumpversion>=0.5.3
+invoke>=1.2.0
+pbr>=5.1.0
+pipenv-to-requirements
+pytest>=3.10.0
+twine>=1.12.1
