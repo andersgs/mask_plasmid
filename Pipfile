@@ -4,12 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-biopython = "*"
-click = "*"
+biopython = ">=1.72"
+click = ">=7"
 
 [dev-packages]
-pbr = "*"
-pytest = "*"
-bumpversion = "*"
-invoke = "*"
-twine = "*"
+pbr = ">=5.1.0"
+pytest = ">=3.10.0"
+bumpversion = ">=0.5.3"
+invoke = ">=1.2.0"
+twine = ">=1.12.1"
+pipenv-to-requirements = "*"
