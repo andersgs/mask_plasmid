@@ -14,3 +14,4 @@ bumpversion = ">=0.5.3"
 invoke = ">=1.2.0"
 twine = ">=1.12.1"
 pipenv-to-requirements = ">=0.6.1"
+readme-renderer = {extras = ["md"], version = "*"}
