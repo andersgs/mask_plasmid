@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+* Added readme\_renderer to dev deps
+* Added readme\_rendered dev dependency
+
+0.1.3
+-----
+
+* Version 0.1.3
 * bugfix typo
 * Added control of version number to PBR
 * Removed ofending classifiers
