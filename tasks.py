@@ -30,7 +30,6 @@ def deploy(c, new_version, update_type="patch", bump_version=True):
     Deploy a new version
     '''
     c.run("pipenv run pipenv_to_requirements")
-    c.run("git commit -a")
     if bump_version:
         c.run(
             f"pipenv run bumpversion --new-version {new_version} {update_type}")
