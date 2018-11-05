@@ -3,6 +3,7 @@ Some basic tasks related to deployment of mask_plasmids
 '''
 
 import logging
+import os
 
 from invoke import task
 
@@ -29,6 +30,8 @@ def deploy(c, new_version, update_type="patch", bump_version=True):
     '''
     Deploy a new version
     '''
+    pbr_version = {"PBR_VERSION": f{new_version}}
+    os.environ.update(pbr_version)
     c.run("pipenv run pipenv_to_requirements")
     if bump_version:
         c.run(
