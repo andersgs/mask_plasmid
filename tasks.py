@@ -31,12 +31,14 @@ def deploy(c, new_version, update_type="patch", bump_version=True):
     Deploy a new version
     '''
     pbr_version = {"PBR_VERSION": f"{new_version}"}
+#     skip_git_sdist = {"SKIP_GIT_SDIST": "1"}
     os.environ.update(pbr_version)
+#     os.environ.update(skip_git_sdist)
     c.run("pipenv run pipenv_to_requirements")
     if bump_version:
         c.run(
             f"pipenv run bumpversion --new-version {new_version} {update_type}")
-    c.run("pipenv run python setup.py sdist bdist bdist_wheel")
+    c.run("pipenv run python setup.py bdist bdist_wheel")
     c.run(f"git commit -a -m 'Version {new_version}'")
     c.run(f"git tag {new_version}")
     c.run("git push --tags")
