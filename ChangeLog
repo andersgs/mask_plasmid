@@ -1,6 +1,21 @@
 CHANGES
 =======
 
+* Some more docs
+* Removed clean up commit, better let the dev do this before deploying
+* Added pipenv-to-requirements to dev
+* Deploying with tagging should now work
+* Made tag false
+* Made commit false
+* Added bdist
+* Added pipenv\_to\_requirements
+* Should probably remove this file
+* Changes for version 0.1.0
+* Added AUTHORS file
+* Additional build ignores
+* Made versions minimal
+* Fixed badget
+
 0.1.0
 -----
 
